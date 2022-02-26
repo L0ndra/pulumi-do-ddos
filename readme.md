@@ -10,7 +10,7 @@ git clone https://github.com/L0ndra/pulumi-do-ddos.git
 cd pulumi-do-ddos
 npm install
 ```
-Створюємо новий аккаунт на Digital Ocean та поповнюємо на 5$ за допомогою PayPal https://m.do.co/c/2ce21bb1833d
+Створюємо новий аккаунт на Digital Ocean https://m.do.co/c/2ce21bb1833d
 
 Переходимо до розділу апі ключів та генеруємо новий токен https://cloud.digitalocean.com/account/api/tokens?i=9b4c48
 
