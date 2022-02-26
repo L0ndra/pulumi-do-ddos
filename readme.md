@@ -11,7 +11,7 @@ cd pulumi-do-ddos
 ```
 Створюємо новий аккаунт на Digital Ocean та поповнюємо на 5$ за допомогою PayPal https://cloud.digitalocean.com
 
-Переходимо до розділу апі ключів та генеруємо новий ключ https://cloud.digitalocean.com/account/api/tokens?i=9b4c48
+Переходимо до розділу апі ключів та генеруємо новий токен https://cloud.digitalocean.com/account/api/tokens?i=9b4c48
 
 Далі ключ вставляємо в наступну команду 
 `pulumi config set digitalocean:token YOUR_TOKEN_HERE --secret` де замість YOUR_TOKEN_HERE ваш ключ 
