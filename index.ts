@@ -9,6 +9,7 @@ const cluster = new digitalocean.KubernetesCluster("do-k8s", {
         size: digitalocean.DropletSlug.DropletS1VCPU2GB,
         nodeCount: 3,
     },
+    surgeUpgrade: false
   });
 
 export const kubeconfig = cluster.kubeConfigs[0].rawConfig;
