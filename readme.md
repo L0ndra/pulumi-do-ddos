@@ -1,4 +1,4 @@
-Встановлюємо pulumi по інструкції https://www.pulumi.com/docs/get-started/install/
+Встановлюємо pulumi по інструкції https://www.pulumi.com/docs/get-started/install/ та логінимось будьяким способом https://www.pulumi.com/docs/reference/cli/pulumi_login/
 
 Встановлюємо гіт https://git-scm.com/downloads
 
@@ -8,6 +8,7 @@
 ```
 git clone https://github.com/L0ndra/pulumi-do-ddos.git
 cd pulumi-do-ddos
+npm install
 ```
 Створюємо новий аккаунт на Digital Ocean та поповнюємо на 5$ за допомогою PayPal https://cloud.digitalocean.com
 
