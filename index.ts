@@ -22,7 +22,7 @@ const appLabels = { app: "ddos" };
 const deployment = new k8s.apps.v1.Deployment(`ddos`, {
     spec: {
         selector: { matchLabels: appLabels },
-        replicas: 5,
+        replicas: 6,
         template: {
             metadata: { labels: appLabels },
             spec: { containers: [{ name: "ddos", image: "londra/nowarddos", args: ["100"]}] }
