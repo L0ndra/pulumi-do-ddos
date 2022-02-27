@@ -6,7 +6,7 @@ const cluster = new digitalocean.KubernetesCluster("do-k8s", {
     version: digitalocean.getKubernetesVersions({versionPrefix: "1.21"}).then(p => p.latestVersion),
     nodePool: {
         name: "default",
-        size: digitalocean.DropletSlug.DropletS8VCPU16GB_AMD,
+        size: digitalocean.DropletSlug.DropletS4VCPU8GB_AMD,
         nodeCount: 3,
     },
     surgeUpgrade: false
