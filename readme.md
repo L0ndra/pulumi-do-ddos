@@ -21,3 +21,10 @@ npm install
 `pulumi up`
 
 Чекаєте, це займає хвилин 7
+
+### Для того щоб запустити нову версію
+```
+git pull
+pulumi destroy
+pulumi up
+```
