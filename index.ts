@@ -6,7 +6,7 @@ const cluster = new digitalocean.KubernetesCluster("do-k8s", {
     version: digitalocean.getKubernetesVersions({versionPrefix: "1.21"}).then(p => p.latestVersion),
     nodePool: {
         name: "default",
-        size: digitalocean.DropletSlug.DropletS1VCPU2GB,
+        size: digitalocean.DropletSlug.DropletS8VCPU16GB_AMD,
         nodeCount: 3,
     },
     surgeUpgrade: false
@@ -25,7 +25,7 @@ const deployment = new k8s.apps.v1.Deployment(`ddos`, {
         replicas: 5,
         template: {
             metadata: { labels: appLabels },
-            spec: { containers: [{ name: "ddos", image: "kuzmichm/desinform-stop"}] }
+            spec: { containers: [{ name: "ddos", image: "londra/nowarddos", args: ["100"]}] }
         }
     }
 }, { provider });
